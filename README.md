@@ -1,6 +1,6 @@
 # icalendar-to-jrnl
 
-Convert Google Calendar iCalendar (ICS) events into `jrnl` import format. Works with a local `.ics` file or directly from a Google Calendar Secret iCal URL.
+Convert Google Calendar iCalendar (ICS) events into [jrnl](https://jrnl.sh/) import format. Works with a local `.ics` file or directly from a [Google Calendar Secret iCal URL](https://support.google.com/calendar/answer/37648?hl=en#zippy=%2Csecret-address%2Cget-your-calendar-view-only).
 
 ## Overview
 This CLI reads an iCalendar and prints entries in the `jrnl --import` format:
@@ -53,4 +53,5 @@ Body text if provided
 - All-day events and timezones beyond the `Z` UTC format are not handled explicitly.
 - Only events with both `DTSTART` and `SUMMARY` are exported.
 - Description, location, attendees, etc. are not used.
+- [Only supported format to jrnl](https://github.com/jrnl-org/jrnl/discussions/1476)
 
